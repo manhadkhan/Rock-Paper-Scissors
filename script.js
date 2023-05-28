@@ -28,3 +28,46 @@ function getComputerChoice() {
         }
     }
 }
+
+function playRound() {
+    const userChoice = prompt("Choose rock, paper or scissors:");
+    // your code here
+  }
+  
+  function game() {
+    let score = 0;
+    let result = "";
+    result += playRound() === "win" ? "You won!" : "You lost!";
+    console.log(result);
+    score += result === "You won!" ? 1 : -1;
+  
+    result = "";
+    result += playRound() === "win" ? "You won!" : "You lost!";
+    console.log(result);
+    score += result === "You won!" ? 1 : -1;
+  
+    result = "";
+    result += playRound() === "win" ? "You won!" : "You lost!";
+    console.log(result);
+    score += result === "You won!" ? 1 : -1;
+  
+    result = "";
+    result += playRound() === "win" ? "You won!" : "You lost!";
+    console.log(result);
+    score += result === "You won!" ? 1 : -1;
+  
+    result = "";
+    result += playRound() === "win" ? "You won!" : "You lost!";
+    console.log(result);
+    score += result === "You won!" ? 1 : -1;
+  
+    if (score > 0) {
+      console.log("You won!");
+    } else if (score < 0) {
+      console.log("You lost!");
+    } else {
+      console.log("It's a tie!");
+    }
+  }
+  
+  
